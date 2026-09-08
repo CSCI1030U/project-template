@@ -11,9 +11,9 @@ the file you make your own.
 
 | File | What it is | Updated |
 |------|------------|---------|
-| [`README.md`](README.md) | your project's own README - what the app is and how to run it | Milestone 1 on |
-| [`PROPOSAL.md`](PROPOSAL.md) | your team, your application, one slice per member, tech plan | Milestone 0 |
-| [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) | the participant matrix - names, GitHub usernames, and the commit that proves each topic | every milestone |
+| [`README.md`](README.md) | the way in - your **team table** (names, GitHub usernames, slices), then your project's own README | Milestone 0, then Milestone 1 on |
+| [`PROPOSAL.md`](PROPOSAL.md) | your application, one slice per member, tech plan | Milestone 0 |
+| [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) | the topic matrix - the commit that proves each member did each topic | every milestone |
 | [`AI-USAGE.md`](AI-USAGE.md) | the AI policy, and your team's disclosure of what AI you used | every milestone |
 | [`docs/design.md`](docs/design.md) | one-page architecture + Big-O design document | Milestone 3 |
 
@@ -98,15 +98,18 @@ server that one person owns; instead each member adds the message type and handl
 their own feature to the shared server. That way a single shared codebase still yields an
 individual, non-trivial commit per topic per person.
 
-### The participant matrix (required every milestone)
+### The team table (required at Milestone 0)
 
-[`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) is where your team is recorded and where each
-member's work is proved. It has two parts:
+The table at the top of [`README.md`](README.md) lists every member's full name, **GitHub
+username**, and the slice they own. It is what lets commits in the history be matched to
+people, so the usernames have to be exactly right - the ones that actually author your
+commits.
 
-1. **The participant list** - every member's full name and **GitHub username**, so that
-   commits in the history can be matched to people. Fill this in at Milestone 0.
-2. **A matrix per milestone** - mapping each student to the commit(s) or pull request(s)
-   that demonstrate each required topic for that milestone:
+### The topic matrix (required every milestone)
+
+[`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) is where each member's work is proved: a table per
+milestone, mapping each student to the commit(s) or pull request(s) that demonstrate each
+required topic for that milestone.
 
 | Student | Topic A | Topic B | Topic C | ... |
 |---------|---------|---------|---------|-----|
@@ -163,8 +166,8 @@ by the student claiming it.
   one vertical slice per member, and the tech plan (standard library only, or an exception
   request). Commit and push it - and have at least a couple of members make a commit, so
   everyone is set up and authenticated.
-- **Fill in the participant list at the top of [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md)** -
-  every member's name and GitHub username.
+- **Fill in the team table at the top of [`README.md`](README.md)** - every member's full
+  name, GitHub username, and the slice they own.
 - **Read [`AI-USAGE.md`](AI-USAGE.md)** together and agree on how your team will work.
 - **Agree on your git workflow** (see [Git workflow](#git-workflow)): commit in your own
   name and push; grow into branches and pull requests as the project goes on.
@@ -173,7 +176,7 @@ by the student claiming it.
 
 - The private repository exists in the `CSCI1030U` organization with every member added.
 - `PROPOSAL.md` is complete and pushed.
-- The participant list in `CONTRIBUTIONS.md` has every member's name and GitHub username.
+- The team table in `README.md` has every member's name, GitHub username, and slice.
 
 ---
 
@@ -210,8 +213,8 @@ leave a cell blank.
 
 - `python main.py` starts a working version of your core loop that a person can actually
   play/use in the terminal.
-- `README.md` has been rewritten as **your project's** README: what the app is and how to
-  run it.
+- `README.md` has been rewritten as **your project's** README - what the app is and how to
+  run it - keeping the team table and the pointers to the other files.
 - The **Milestone 1** table in `CONTRIBUTIONS.md` is filled in, every member's row
   complete.
 - The **Milestone 1** section of `AI-USAGE.md` is filled in.
@@ -360,7 +363,7 @@ to the assignment in Canvas.
 2. **Topic coverage** - are all listed topics present and used meaningfully, rather than
    token or decorative?
 3. **Individual participation** - does every member have their required non-trivial
-   commits, verified via git history and the participant matrix? **(Scored per student.)**
+   commits, verified via git history and the topic matrix? **(Scored per student.)**
 4. **Presentation and documentation** - clear demo, clear speaking, up-to-date README and
    design doc.
 

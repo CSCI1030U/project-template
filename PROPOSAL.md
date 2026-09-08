@@ -5,8 +5,8 @@ Fill this in together at **Milestone 0**, then commit and push it. See
 
 ## Team
 
-Names and GitHub usernames also go in the participant table in
-[`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) - keep the two consistent.
+Names and GitHub usernames also go in the team table at the top of
+[`README.md`](README.md) - keep the two consistent.
 
 - <member 1 name> (@<username>)
 - <member 2 name> (@<username>)

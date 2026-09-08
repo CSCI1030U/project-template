@@ -1,29 +1,14 @@
 # Contributions
 
-This file records **who is on the team** and **what each member personally contributed**
-at each milestone. It is how your team proves the per-student topic rule in
-[`MILESTONES.md`](MILESTONES.md), and it is what the TA reads at every checkpoint.
+This file records **what each member personally contributed** at each milestone. It is how
+your team proves the per-student topic rule in [`MILESTONES.md`](MILESTONES.md), and it is
+what the TA reads at every checkpoint.
 
 Update it **before every checkpoint** (Weeks 4, 8, 12). Keep every milestone table in this
 one file - do not delete the earlier ones; the history matters.
 
----
-
-## Participants
-
-Fill this in at **Milestone 0**, and keep it accurate if the team changes. The GitHub
-username must be the one that authors your commits, so that the history can be matched to
-you - check with `git log --format='%an <%ae>'` if you are not sure what yours is.
-
-| # | Full name | GitHub username | Slice (the feature you own) |
-|---|-----------|-----------------|-----------------------------|
-| 1 | <name>    | @<username>     | <feature>                   |
-| 2 | <name>    | @<username>     | <feature>                   |
-| 3 | <name>    | @<username>     | <feature>                   |
-| 4 | <name>    | @<username>     | <feature>                   |
-| 5 | <name>    | @<username>     | <feature>                   |
-
-<!-- Teams of four: delete row 5. -->
+The team itself - full names, GitHub usernames, and who owns which slice - is in the table
+at the top of [`README.md`](README.md). Use the same names in the rows below.
 
 ---
 
