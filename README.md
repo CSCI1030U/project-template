@@ -8,18 +8,18 @@ networked, multi-user theme - see the "Suggested projects" section of
 
 ## The team
 
-| Full name | GitHub username | Slice (the feature you own) |
-|-----------|-----------------|-----------------------------|
-| <name>    | @<username>     | <feature>                   |
-| <name>    | @<username>     | <feature>                   |
-| <name>    | @<username>     | <feature>                   |
-| <name>    | @<username>     | <feature>                   |
-| <name>    | @<username>     | <feature>                   |
+| Full name | GitHub username |
+|-----------|-----------------|
+| <name>    | @<username>     |
+| <name>    | @<username>     |
+| <name>    | @<username>     |
+| <name>    | @<username>     |
+| <name>    | @<username>     |
 
 <!-- Fill this in at Milestone 0. Teams of four: delete the fifth row.
      The GitHub username must be the one that authors your commits, so your work in the
      history can be matched to you - check yours with:  git log --format='%an <%ae>'
-     Each member owns one comparable feature, built end to end across the term. -->
+     Who owns which slice, and what each member contributed, go in CONTRIBUTIONS.md. -->
 
 ## Tech plan
 
@@ -32,15 +32,21 @@ networked, multi-user theme - see the "Suggested projects" section of
 python main.py
 ```
 
+## Design
+
+<Leave this until Milestone 3. Then add, in about a page: how the pieces fit together
+(server, client, engine, storage), and a short **Big-O note** for the algorithm your team
+implemented - what it does, its complexity, and why that is fast enough here.>
+
 ## Where everything is
 
 | File | What it is |
 |------|------------|
 | [`MILESTONES.md`](MILESTONES.md) | **the project requirements** - all four milestones, what's due when |
-| [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) | the topic matrix - which commit proves each member did each topic |
+| [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) | who owns which slice, and which commit proves each member did each topic |
 | [`AI-USAGE.md`](AI-USAGE.md) | the AI policy, and your team's disclosure |
-| [`docs/design.md`](docs/design.md) | architecture and Big-O analysis (Milestone 3) |
 
-> **This file is yours.** The four sections above are your Milestone 0 write-up - fill them
-> in together. From Milestone 1 on, grow "The application" and "Running it" into a real
-> README for your project, and keep the team table, the tech plan, and these pointers.
+> **This file is yours.** The sections above are part of your Milestone 0 write-up - fill
+> them in together, and fill in the slices table in `CONTRIBUTIONS.md` at the same time.
+> From Milestone 1 on, grow "The application" and "Running it" into a real README for your
+> project, and keep the team table, the tech plan, and these pointers.

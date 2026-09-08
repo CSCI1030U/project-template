@@ -11,10 +11,9 @@ the file you make your own.
 
 | File | What it is | Updated |
 |------|------------|---------|
-| [`README.md`](README.md) | the way in - the application, the **team table** (names, GitHub usernames, slices), and the tech plan; then your project's own README | Milestone 0, then Milestone 1 on |
-| [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) | the topic matrix - the commit that proves each member did each topic | every milestone |
+| [`README.md`](README.md) | the way in - the application, the **team table** (full names and GitHub usernames), and the tech plan; then your project's own README | Milestone 0, then Milestone 1 on |
+| [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) | who owns which slice, and the commit that proves each member did each topic | every milestone |
 | [`AI-USAGE.md`](AI-USAGE.md) | the AI policy, and your team's disclosure of what AI you used | every milestone |
-| [`docs/design.md`](docs/design.md) | one-page architecture + Big-O design document | Milestone 3 |
 
 ---
 
@@ -100,16 +99,17 @@ individual, non-trivial commit per topic per person.
 
 ### The team table (required at Milestone 0)
 
-The table at the top of [`README.md`](README.md) lists every member's full name, **GitHub
-username**, and the slice they own. It is what lets commits in the history be matched to
+The table at the top of [`README.md`](README.md) lists every member's full name and
+**GitHub username**, and nothing else. It is what lets commits in the history be matched to
 people, so the usernames have to be exactly right - the ones that actually author your
 commits.
 
-### The topic matrix (required every milestone)
+### The slices and topic matrix (required every milestone)
 
-[`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) is where each member's work is proved: a table per
-milestone, mapping each student to the commit(s) or pull request(s) that demonstrate each
-required topic for that milestone.
+[`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) is where each member's work is recorded and proved.
+It opens with the **slices** table - who owns which feature, agreed at Milestone 0 - and is
+then a table per milestone, mapping each student to the commit(s) or pull request(s) that
+demonstrate each required topic for that milestone.
 
 | Student | Topic A | Topic B | Topic C | ... |
 |---------|---------|---------|---------|-----|
@@ -165,12 +165,13 @@ by the student claiming it.
 - **Fill in [`README.md`](README.md)** - this is your Milestone 0 write-up, and it has
   three parts:
   - **the application** - what you are building;
-  - **the team table** - every member's full name, GitHub username, and the one vertical
-    slice they own;
+  - **the team table** - every member's full name and GitHub username;
   - **the tech plan** - standard library only, or a request to use something else.
 
   Commit and push it, and have at least a couple of members make a commit, so everyone is
   set up and authenticated.
+- **Fill in the slices table in [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md)** - the one vertical
+  slice each member owns for the term.
 - **Read [`AI-USAGE.md`](AI-USAGE.md)** together and agree on how your team will work.
 - **Agree on your git workflow** (see [Git workflow](#git-workflow)): commit in your own
   name and push; grow into branches and pull requests as the project goes on.
@@ -179,7 +180,8 @@ by the student claiming it.
 
 - The private repository exists in the `CSCI1030U` organization with every member added.
 - `README.md` is filled in and pushed: the application, the team table (every member's
-  name, GitHub username, and slice), and the tech plan.
+  full name and GitHub username), and the tech plan.
+- The slices table in `CONTRIBUTIONS.md` names the feature each member owns.
 
 ---
 
@@ -196,13 +198,13 @@ types, conditionals, loops, strings, lists, dictionaries, functions).
 
 ### Per-student topics
 
-Keep the vertical-slice model from your Milestone 0 team table. Every member must have at least one
+Keep the vertical-slice model from your Milestone 0 slices table. Every member must have at least one
 [non-trivial commit](#what-counts-as-a-non-trivial-commit) for **each** of these four
 topics, **in their own slice**:
 
 - [ ] **Planning / problem-solving** (Unit 01) - a short written spec/decomposition for
       your slice: what it does, the steps, the data it needs. Put it in the repo (a
-      `docs/` note, or a section of the README) and commit it.
+      section of the README, or a short note file of your own) and commit it.
 - [ ] **Control flow** (Unit 02) - conditionals and loops that drive your feature.
 - [ ] **Collections** (Unit 02) - lists and/or dictionaries holding your feature's state.
 - [ ] **Functions** (Unit 02) - at least one non-trivial function you wrote yourself.
@@ -282,7 +284,7 @@ topics, **in their own slice**:
       queue, move-history/undo stack, sorted leaderboard, ...).
 - [ ] **Algorithm strategy** (Unit 04) - a feature using backtracking, divide-and-conquer,
       greedy, or dynamic programming (an AI opponent, pathfinding, scoring/optimization),
-      with a **short Big-O note** in `docs/design.md`.
+      with a **short Big-O note** in your `README.md`.
 - [ ] **Sockets** (Unit 05) - a client-server message + handler for your feature.
 - [ ] **Concurrency** (Unit 05) - an async task, thread, or process that lets your
       feature's I/O run alongside others (e.g. your handler on the concurrent server).
@@ -296,8 +298,8 @@ topics, **in their own slice**:
 - An **algorithm strategy** drives a feature, with a **Big-O note** for it.
 - The product is packaged with a **`README.md`** (what it is + run instructions), the
   complete **`CONTRIBUTIONS.md`** covering all three milestones, a complete
-  **`AI-USAGE.md`**, and a one-page **[`docs/design.md`](docs/design.md)** covering the
-  architecture and the Big-O analysis.
+  **`AI-USAGE.md`**, and a **Design** section in the `README.md` - about a page - covering
+  the architecture and the Big-O analysis.
 
 ---
 
@@ -367,8 +369,8 @@ to the assignment in Canvas.
    token or decorative?
 3. **Individual participation** - does every member have their required non-trivial
    commits, verified via git history and the topic matrix? **(Scored per student.)**
-4. **Presentation and documentation** - clear demo, clear speaking, up-to-date README and
-   design doc.
+4. **Presentation and documentation** - clear demo, clear speaking, an up-to-date README
+   including its Milestone 3 design section.
 
 Fronts 1, 2, and 4 are largely team scores; front 3 is individual - so a strong team does
 not carry a member who did not contribute, and one quiet slice does not sink the team.
@@ -391,7 +393,7 @@ How the project is intended to touch the whole course:
 | 03 | Command-line arguments | Launch/config options | 2 |
 | 03 | TUI / GUI | The client interface | 2 |
 | 04 | Data structures (stack/queue/BST) | Turns, history, leaderboard | 3 |
-| 04 | Algorithm strategies + Big-O | AI / pathfinding / scoring + design doc | 3 |
+| 04 | Algorithm strategies + Big-O | AI / pathfinding / scoring + README design note | 3 |
 | 05 | Sockets | Client-server messages | 3 |
 | 05 | Async / threads / processes | Concurrent server for many users | 3 |
 
