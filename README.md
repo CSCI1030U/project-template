@@ -21,11 +21,6 @@ networked, multi-user theme - see the "Suggested projects" section of
      history can be matched to you - check yours with:  git log --format='%an <%ae>'
      Who owns which slice, and what each member contributed, go in CONTRIBUTIONS.md. -->
 
-## Tech plan
-
-- Standard library only? **yes** / <name any extra library you want to use, and why.
-  Anything beyond the standard library needs your instructor's approval.>
-
 ## Running it
 
 ```
@@ -38,7 +33,7 @@ python main.py
 (server, client, engine, storage), and a short **Big-O note** for the algorithm your team
 implemented - what it does, its complexity, and why that is fast enough here.>
 
-## Where everything is
+## Required Files
 
 | File | What it is |
 |------|------------|
