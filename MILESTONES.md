@@ -11,8 +11,7 @@ the file you make your own.
 
 | File | What it is | Updated |
 |------|------------|---------|
-| [`README.md`](README.md) | the way in - your **team table** (names, GitHub usernames, slices), then your project's own README | Milestone 0, then Milestone 1 on |
-| [`PROPOSAL.md`](PROPOSAL.md) | your application, one slice per member, tech plan | Milestone 0 |
+| [`README.md`](README.md) | the way in - the application, the **team table** (names, GitHub usernames, slices), and the tech plan; then your project's own README | Milestone 0, then Milestone 1 on |
 | [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) | the topic matrix - the commit that proves each member did each topic | every milestone |
 | [`AI-USAGE.md`](AI-USAGE.md) | the AI policy, and your team's disclosure of what AI you used | every milestone |
 | [`docs/design.md`](docs/design.md) | one-page architecture + Big-O design document | Milestone 3 |
@@ -72,14 +71,15 @@ several users at once (async / threads, Unit 05), organize itself with classes (
 a data structure and an algorithm (Unit 04) - all built on Unit 02 fundamentals and
 planned with Unit 01 techniques.
 
-Your team chooses its specific application, subject to instructor approval of the
-proposal. See [Suggested projects](#suggested-projects) for ideas that are known to fit.
+Your team chooses its specific application, subject to instructor approval at Milestone 0.
+See [Suggested projects](#suggested-projects) for ideas that are known to fit.
 
 ### Scope and tech constraints
 
 - **Python standard library only**, so the project stays aligned with what is taught:
   `socket`, `asyncio` / `threading` / `multiprocessing`, `tkinter`, `argparse`, `json`,
-  `csv`. Any additional dependency needs instructor approval in the proposal.
+  `csv`. Any additional dependency needs instructor approval - ask for it in the tech
+  plan in your `README.md`.
 - **Team size: 4-5 students.** The plan scales across that range; the per-student topic
   rule is the same regardless of size.
 - Keep the scope honest: a small application that cleanly hits every topic beats an
@@ -162,12 +162,15 @@ by the student claiming it.
   > Use **Use this template**, not **Fork**. A fork cannot be made private and stays wired
   > back to the template.
 
-- **Fill in [`PROPOSAL.md`](PROPOSAL.md)**: the chosen application, a first breakdown into
-  one vertical slice per member, and the tech plan (standard library only, or an exception
-  request). Commit and push it - and have at least a couple of members make a commit, so
-  everyone is set up and authenticated.
-- **Fill in the team table at the top of [`README.md`](README.md)** - every member's full
-  name, GitHub username, and the slice they own.
+- **Fill in [`README.md`](README.md)** - this is your Milestone 0 write-up, and it has
+  three parts:
+  - **the application** - what you are building;
+  - **the team table** - every member's full name, GitHub username, and the one vertical
+    slice they own;
+  - **the tech plan** - standard library only, or a request to use something else.
+
+  Commit and push it, and have at least a couple of members make a commit, so everyone is
+  set up and authenticated.
 - **Read [`AI-USAGE.md`](AI-USAGE.md)** together and agree on how your team will work.
 - **Agree on your git workflow** (see [Git workflow](#git-workflow)): commit in your own
   name and push; grow into branches and pull requests as the project goes on.
@@ -175,8 +178,8 @@ by the student claiming it.
 ### Definition of done
 
 - The private repository exists in the `CSCI1030U` organization with every member added.
-- `PROPOSAL.md` is complete and pushed.
-- The team table in `README.md` has every member's name, GitHub username, and slice.
+- `README.md` is filled in and pushed: the application, the team table (every member's
+  name, GitHub username, and slice), and the tech plan.
 
 ---
 
@@ -193,7 +196,7 @@ types, conditionals, loops, strings, lists, dictionaries, functions).
 
 ### Per-student topics
 
-Keep the vertical-slice model from your proposal. Every member must have at least one
+Keep the vertical-slice model from your Milestone 0 team table. Every member must have at least one
 [non-trivial commit](#what-counts-as-a-non-trivial-commit) for **each** of these four
 topics, **in their own slice**:
 
@@ -378,7 +381,7 @@ How the project is intended to touch the whole course:
 
 | Unit | Topic | Where it appears | Milestone |
 |------|-------|------------------|-----------|
-| 01 | Problem-solving, decomposition | Proposal + per-slice specs | 0, 1 |
+| 01 | Problem-solving, decomposition | Milestone 0 write-up + per-slice specs | 0, 1 |
 | 02 | Variables, types, conditionals, loops | Core game/app loop | 1 |
 | 02 | Strings, lists, dictionaries | Game/app state | 1 |
 | 02 | Functions | Everywhere | 1 |
