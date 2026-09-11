@@ -16,6 +16,8 @@ networked, multi-user theme - see the "Suggested projects" section of
 | <name>    | @<username>     |
 | <name>    | @<username>     |
 
+Note:  Be sure to (https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository)[add all of the group members to as collaborators on this repository].
+
 <!-- Fill this in at Milestone 0. Teams of four: delete the fifth row.
      The GitHub username must be the one that authors your commits, so your work in the
      history can be matched to you - check yours with:  git log --format='%an <%ae>'
